@@ -1,0 +1,10 @@
+ion-item {
+    width: 50%;
+    display: inline-block;
+}
+
+@media (width < 800px) {
+    ion-item {
+        display: inline;
+    }
+}

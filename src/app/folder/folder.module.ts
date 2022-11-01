@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PeopleComponent } from './components/people/people.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { AssignmentsComponent } from './components/assignments/assignments.component';
+import { PersonComponent } from './components/person/person.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import { AssignmentsComponent } from './components/assignments/assignments.compo
     FolderPageRoutingModule,
     ReactiveFormsModule
   ],
-  declarations: [FolderPage, HomeComponent, PeopleComponent, TasksComponent, AssignmentsComponent]
+  declarations: [FolderPage, HomeComponent, PeopleComponent, PersonComponent, TasksComponent, AssignmentsComponent]
 })
 export class FolderPageModule {}
