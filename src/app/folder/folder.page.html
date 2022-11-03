@@ -4,12 +4,11 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <!--<ion-title>{{ folder }}</ion-title>-->
-    <ion-title>
-      <p *ngIf="folder=='Home'">Página Home</p>
-      <p *ngIf="folder=='People'">Gestión de personas</p>
-      <p *ngIf="folder=='Tasks'">Gestión de tareas</p>
-      <p *ngIf="folder=='Assignments'">Asignación de tareas</p>
-    </ion-title>
+    <ion-title *ngIf="folder=='Home'">Página Home</ion-title>
+    <ion-title *ngIf="folder=='People'">Gestión de personas</ion-title>
+    <ion-title *ngIf="folder=='Tasks'">Gestión de tareas</ion-title>
+    <ion-title *ngIf="folder=='Assignments'">Asignación de tareas</ion-title>
+
   </ion-toolbar>
 </ion-header>
 

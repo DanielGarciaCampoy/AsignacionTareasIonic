@@ -12,21 +12,24 @@ export class PeopleService {
       name:"Juan Alberto",
       surname:"García",
       nickname:"Illojuan",
-      picture:"https://pbs.twimg.com/media/Ea9xEW7WAAMSnv2.jpg"
+      picture:"https://pbs.twimg.com/media/Ea9xEW7WAAMSnv2.jpg",
+      age:28
     },
     {
       id:2,
       name:"Kanye",
       surname:"West",
       nickname:"Ye",
-      picture:"https://media.wired.com/photos/63226fd374ce5b82a68ef212/master/w_2560%2Cc_limit/Kanye-West-Black-Skinhead-Excerpt-Culture-1205198865.jpg"
+      picture:"https://media.wired.com/photos/63226fd374ce5b82a68ef212/master/w_2560%2Cc_limit/Kanye-West-Black-Skinhead-Excerpt-Culture-1205198865.jpg",
+      age:45
     },
     {
       id:3,
       name:"Rosalia",
       surname:"Vila",
       nickname:"Rosalia",
-      picture:"http://www.diarioelnorte.com.ar/wp-content/uploads/2022/01/f.elconfidencial.com_original_838_c61_47e_838c6147e5ddd380aa6732dc996859d3.jpg"
+      //picture:"http://www.diarioelnorte.com.ar/wp-content/uploads/2022/01/f.elconfidencial.com_original_838_c61_47e_838c6147e5ddd380aa6732dc996859d3.jpg",
+      age:29
     }
   ];
 
@@ -57,6 +60,7 @@ export class PeopleService {
       _person.surname = person.surname;
       _person.nickname = person.nickname;
       _person.picture = person.picture;
+      _person.age = person.age;
     }
     
   }

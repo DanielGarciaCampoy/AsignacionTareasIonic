@@ -1,3 +1,43 @@
-<p>
-  person-detail funciona!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{mode=="Edit"?"Modificar":"Añadir"}} persona</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="onDismiss(null)"><ion-icon color="danger" name="close-outline" style="zoom: 1.5;"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" (keyup.enter)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">
+        Nombre
+      </ion-label>
+      <ion-input type="text" placeholder="Introduzca el nombre" formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Apellido/s
+      </ion-label>
+      <ion-input type="text" placeholder="Introduzca los apellidos" formControlName="surname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Apodo
+      </ion-label>
+      <ion-input type="text" placeholder="Introduzca el apodo" formControlName="nickname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Imagen<p>(opcional)</p> 
+      </ion-label>
+      <ion-input type="text" placeholder="Enlace imagen" formControlName="picture"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Edad
+      </ion-label>
+      <ion-input type="number" placeholder="Introduzca la edad" formControlName="age"></ion-input>
+    </ion-item>
+    <ion-button [disabled]="!form.valid" type="submit" style="margin-top: 2.5%;">{{mode=="Edit"?"Modificar":"Añadir"}} &nbsp; <ion-icon name="send-outline"></ion-icon></ion-button>
+  </form>
+</ion-content>

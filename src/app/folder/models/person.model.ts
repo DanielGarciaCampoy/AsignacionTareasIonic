@@ -4,4 +4,5 @@ export interface Person {
     surname:string;
     nickname:string;
     picture?:string;
+    age:number;
 }
