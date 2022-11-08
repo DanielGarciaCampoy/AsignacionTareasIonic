@@ -9,8 +9,8 @@ export class AppComponent {
     { title: 'Home', url: '/folder/Home', icon: 'home' },
     { title: 'Gestión de Personas', url: '/folder/People', icon: 'people' },
     { title: 'Gestión de tareas', url: '/folder/Tasks', icon: 'file-tray-full' },
-    { title: 'Asignar tareas', url: '/folder/Assignments', icon: 'list' },
-    { title: 'Ver tareas asignadas', url: '#', icon: 'layers' },
+    { title: 'Asignación de tareas', url: '/folder/Assignments', icon: 'list' },
+    //{ title: 'Ver tareas asignadas', url: '#', icon: 'layers' },
     //{ title: 'Spam', url: '', icon: 'warning' },
   ];
   constructor() {}

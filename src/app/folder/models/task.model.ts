@@ -3,4 +3,5 @@ export interface Task {
     name:string;
     durationInSecs:number;
     picture:string;
+    description:string;
 }
