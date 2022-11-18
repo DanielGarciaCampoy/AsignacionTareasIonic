@@ -1,0 +1,15 @@
+{
+    "app":{
+        "title":"Gestión de tareas y usuarios",
+        "langButton":"CAMBIAR IDIOMA",
+        "prox":"Más proximamente...",
+
+        "gesPerson":"Gestión de personas",
+        "gesTareas":"Gestión de tareas",
+        "asigTareas":"Asignación de tareas"
+
+    },
+    "person":{
+        "edad":"edad"
+    }
+}

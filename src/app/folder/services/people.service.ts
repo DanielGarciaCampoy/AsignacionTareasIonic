@@ -25,11 +25,11 @@ export class PeopleService {
     },
     {
       id:3,
-      name:"Rosalia",
-      surname:"Vila",
-      nickname:"Rosalia",
-      //picture:"http://www.diarioelnorte.com.ar/wp-content/uploads/2022/01/f.elconfidencial.com_original_838_c61_47e_838c6147e5ddd380aa6732dc996859d3.jpg",
-      age:29
+      name:"Elon",
+      surname:"Musk",
+      nickname:"Elon",
+      picture:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Elon_Musk_Colorado_2022_%28cropped%29.jpg/800px-Elon_Musk_Colorado_2022_%28cropped%29.jpg",
+      age:51
     }
   ];
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -13,5 +14,23 @@ export class AppComponent {
     //{ title: 'Ver tareas asignadas', url: '#', icon: 'layers' },
     //{ title: 'Spam', url: '', icon: 'warning' },
   ];
-  constructor() {}
+  public labels = [];
+
+  language = 0; // 0 español, 1 ingles
+  constructor(
+    private translate: TranslateService
+  ) {
+    this.translate.setDefaultLang('es')
+  }
+  onLanguage() {
+    this.language = (this.language+1)%2;
+    switch(this.language) {
+      case 0:
+        this.translate.setDefaultLang('es');
+        break;
+      case 1:
+        this.translate.setDefaultLang('en');
+        break;
+    }
+  }
 }

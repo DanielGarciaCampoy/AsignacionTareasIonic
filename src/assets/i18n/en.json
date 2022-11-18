@@ -1,0 +1,14 @@
+{
+    "app":{
+        "title":"Tasks and users Management",
+        "langButton":"CHANGE LANGUAGE",
+        "prox":"More coming soon...",
+
+        "gesPerson":"Person management",
+        "gesTareas":"Tasks management",
+        "asigTareas":"Asignación de tareas"
+    },
+    "person":{
+        "edad":"age"
+    }
+}

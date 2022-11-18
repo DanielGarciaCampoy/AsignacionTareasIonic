@@ -3,9 +3,8 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Asginación de tareas</ion-list-header>
-          <ion-note>En Ionic</ion-note>
-
+          <ion-list-header>{{'app.title' | translate}}</ion-list-header>
+          <ion-note>Ionic</ion-note>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
@@ -15,8 +14,8 @@
         </ion-list>
 
         <ion-list id="labels-list">
-          <ion-list-header>Más proximamente...</ion-list-header>
-
+          <ion-list-header>{{ 'app.prox' | translate }}</ion-list-header>
+          <ion-button (click)="onLanguage()" style="margin-bottom: 5%;">{{'app.langButton' | translate}}</ion-button>
           <ion-item *ngFor="let label of labels" lines="none">
             <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
             <ion-label>{{ label }}</ion-label>
